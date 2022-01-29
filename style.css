@@ -39,6 +39,30 @@ main{
     margin-left: 19px;
     overflow: hidden;
 }
+section{
+}
+.pratos{
+    display: flex;
+    overflow: scroll;
+}
+.pratos button{
+    Width:162px;
+    Height:206px;
+    background-color: white;
+    border-radius: 9px;
+    margin-right: 16px;
+    box-sizing: border-box;
+}
+.selecionado{
+    border: 5px solid green;
+}
+.conteudo-prato{
+    width: 100%;
+}
+.conteudo-prato img{
+    width: 144px;
+    height: 87px;
+}
 h2{
     font-family: Righteous;
 font-style: normal;
@@ -48,15 +72,38 @@ line-height: 32px;
 letter-spacing: 0.018em;
 color: #333333;
 }
-.prato{
-    Width:172px;
-Height:216px;
-background-color: white;
-border-radius: 9px;
-}
-nav ul{
+/* FOOTER*//* FOOTER*//* FOOTER*//* FOOTER*//* FOOTER*//* FOOTER*//* FOOTER*/
+footer{
+    width: 100%;
+    height: 92px;
+    background-color: white;
+    position: relative;
     display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 0;
 }
-nav ul li{
-    margin-left: 15px;
+footer button{
+    position: absolute;
+    width: 364px;
+    height: 61px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    background: #CBCBCB;
+    border-radius: 50px;
+}
+/* TEXTOS*//* FOOTER*//* TEXTOS*//* FOOTER*//* TEXTOS*//* FOOTER*//* TEXTOS*//* FOOTER*//* TEXTOS*/
+footer div p{
+    font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 23px;
+text-align: center;
+letter-spacing: 0.018em;
+
+color: #FFFFFF;
 }
