@@ -39,13 +39,12 @@ main{
     margin-left: 19px;
     overflow: hidden;
 }
-section{
-}
-.pratos{
+
+.pratos,.bebidas,.sobremesas{
     display: flex;
     overflow: scroll;
 }
-.pratos button{
+.pratos button,.bebidas button,.sobremesas button{
     Width:162px;
     Height:206px;
     background-color: white;
@@ -56,10 +55,7 @@ section{
 .selecionado{
     border: 5px solid green;
 }
-.conteudo-prato{
-    width: 100%;
-}
-.conteudo-prato img{
+.conteudo-prato img,.conteudo-bebida img,.conteudo-sobremesa img{
     width: 144px;
     height: 87px;
 }
