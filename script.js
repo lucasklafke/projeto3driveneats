@@ -1,15 +1,17 @@
 let selecionado;
 let comida = null;
-let refrigerante = null;
+let bebida = null;
 let sobremesa = null;
 
     function selecionarPrato(seletor){
+        const addSelecionado = document.querySelector("."+seletor)
         const selecionado = document.querySelector(".pratos .selecionado")
         if (selecionado !== null) {
             selecionado.classList.remove("selecionado")
         }
-        const addSelecionado = document.querySelector("."+seletor)
+        
         addSelecionado.classList.add("selecionado")
+        return comida = "1";
     }
     function selecionarBebida(seletor){
         const selecionado = document.querySelector(".bebidas .selecionado")
@@ -18,6 +20,7 @@ let sobremesa = null;
         }
         const addSelecionado = document.querySelector("."+seletor)
         addSelecionado.classList.add("selecionado")
+        return bebida = '1';
     }
     function selecionarSobremesa(seletor){
         const selecionado = document.querySelector(".sobremesas .selecionado")
@@ -26,13 +29,18 @@ let sobremesa = null;
         }
         const addSelecionado = document.querySelector("."+seletor)
         addSelecionado.classList.add("selecionado")
+        return sobremesa = '1';
     }
     function verificaSelecao(){
         
-        if ((comida !== null) && (refrigerante !== null) && (sobremesa !== null)){
-
+        if ((comida !== null) && (bebida !== null) && (sobremesa !== null)){
+            let botaoFinalizar = document.querySelector("footer button")
+            let textoFinalizar = botaoFinalizar.querySelector("p")
+            textoFinalizar.textContent = "Fechar pedido"
+            botaoFinalizar.style.backgroundColor = "#32B72F"
         }
     }
+    verificaSelecao()
 
 
 // CRIA UMA FUNCAO PARA LIMPAR OS DADOS

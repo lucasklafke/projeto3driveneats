@@ -19,7 +19,7 @@
         <section>
             <h2>Primeiro, seu prato</h2>
             <div class="pratos">
-                <button class="torta-fria" onclick="selecionarPrato('torta-fria')">
+                <button class="torta-fria" onclick="selecionarPrato('torta-fria'),verificaSelecao()">
                     <div class="conteudo-prato">
                         <div><img src="images/torta-fria.jpg" alt="torta fria"></div>
                         <div class="texto-prato">
@@ -31,8 +31,9 @@
                             <span>R$30,00</span>
                         </div>
                     </div>
+                    <div class="icon"><ion-icon name="checkmark-circle"></ion-icon></div>
                 </button>
-                <button class="lasanha" onclick="selecionarPrato('lasanha')">
+                <button class="lasanha" onclick="selecionarPrato('lasanha'),verificaSelecao()">
                     <div class="conteudo-prato">
                         <div><img src="images/lasanha.jpg" alt="torta fria"></div>
                         <div class="texto-prato">
@@ -44,8 +45,10 @@
                             <span>R$30,00</span>
                         </div>
                     </div>
+                    <div class="icon"><ion-icon name="checkmark-circle"></ion-icon></div>
+
                 </button>
-                <button class="ovo" onclick="selecionarPrato('ovo')">
+                <button class="ovo" onclick="selecionarPrato('ovo'),verificaSelecao()">
                     <div class="conteudo-prato">
                         <div><img src="images/ovo.jpg" alt="torta fria"></div>
                         <div class="texto-prato">
@@ -57,13 +60,14 @@
                             <span>R$30,00</span>
                         </div>
                     </div>
+                    <div class="icon"><ion-icon name="checkmark-circle"></ion-icon></div>
                 </button>
             </div>
         </section>
         <section>
             <h2>Primeiro, seu prato</h2>
             <div class="bebidas">
-                <button class="coca-cola" onclick="selecionarBebida('coca-cola')">
+                <button class="coca-cola" onclick="selecionarBebida('coca-cola',verificaSelecao())">
                     <div class="conteudo-bebida">
                         <div><img src="images/coca-cola.jpg" alt="coca cola"></div>
                         <div class="texto-prato">
@@ -74,9 +78,11 @@
                         <div class="preco-prato">
                             <span>R$30,00</span>
                         </div>
+                        <div class="icon"><ion-icon name="checkmark-circle"></ion-icon></div>
+
                     </div>
                 </button>
-                <button class="soda" onclick="selecionarBebida('soda')">
+                <button class="soda" onclick="selecionarBebida('soda'),verificaSelecao()">
                     <div class="conteudo-bebida">
                         <div><img src="images/soda.jpg" alt="soda"></div>
                         <div class="texto-prato">
@@ -88,8 +94,10 @@
                             <span>R$30,00</span>
                         </div>
                     </div>
+                    <div class="icon"><ion-icon name="checkmark-circle"></ion-icon></div>
+
                 </button>
-                <button class="pepsi" onclick="selecionarBebida('pepsi')">
+                <button class="pepsi" onclick="selecionarBebida('pepsi'),verificaSelecao()">
                     <div class="conteudo-bebida">
                         <div><img src="images/pepsi.jpg" alt="pepsi"></div>
                         <div class="texto-prato">
@@ -101,13 +109,15 @@
                             <span>R$30,00</span>
                         </div>
                     </div>
+                    <div class="icon"><ion-icon name="checkmark-circle"></ion-icon></div>
+
                 </button>
             </div>
         </section>
         <section>
             <h2>Primeiro, seu prato</h2>
             <div class="sobremesas">
-                <button class="torta-chocolate" onclick="selecionarSobremesa('torta-chocolate')">
+                <button class="torta-chocolate" onclick="selecionarSobremesa('torta-chocolate'),verificaSelecao()">
                     <div class="conteudo-sobremesa">
                         <div><img src="images/torta-chocolate.jpg" alt="torta de chocolate"></div>
                         <div class="texto-prato">
@@ -119,8 +129,10 @@
                             <span>R$30,00</span>
                         </div>
                     </div>
+                    <div class="icon"><ion-icon name="checkmark-circle"></ion-icon></div>
+
                 </button>
-                <button class="brigadeiro" onclick="selecionarSobremesa('brigadeiro')">
+                <button class="brigadeiro" onclick="selecionarSobremesa('brigadeiro'),verificaSelecao()">
                     <div class="conteudo-sobremesa">
                         <div><img src="images/brigadeiro.jpg" alt="soda"></div>
                         <div class="texto-prato">
@@ -132,8 +144,10 @@
                             <span>R$30,00</span>
                         </div>
                     </div>
+                    <div class="icon"><ion-icon name="checkmark-circle"></ion-icon></div>
+
                 </button>
-                <button class="branquinho" onclick="selecionarSobremesa('branquinho')">
+                <button class="branquinho" onclick="selecionarSobremesa('branquinho'),verificaSelecao()">
                     <div class="conteudo-sobremesa">
                         <div><img src="images/branquinho.jpg" alt="pepsi"></div>
                         <div class="texto-prato">
@@ -145,13 +159,21 @@
                             <span>R$30,00</span>
                         </div>
                     </div>
+                    <div class="icon"><ion-icon name="checkmark-circle"></ion-icon></div>
+
                 </button>
             </div>
         </section>
     </main>
     <footer>
-        <button></button>
+        <button>
+            <p>Selecione os 3 itens
+                para fechar o pedido</p>
+        </button>
     </footer>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
     <script src="script.js"></script>
 </body>
 </html>
