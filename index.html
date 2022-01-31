@@ -21,28 +21,36 @@
             <div class="pratos">
                 <button class="torta-fria" onclick="selecionarPrato('torta-fria'),verificaSelecao()">
                     <div class="conteudo-prato">
-                        <div><img src="images/torta-fria.jpg" alt="torta fria"></div>
+                        <div class="imagem-prato"><img src="images/torta-fria.jpg" alt="torta fria"></div>
                         <div class="texto-prato">
-                            <h3>torta fria</h3>
-                            <p>350 gramas de torta</p>
-                            <p>frango e pão</p>
-                        </div>
-                        <div class="preco-prato">
-                            <span>R$30,00</span>
+                            <div class="titulo-prato">
+                                <h3>torta fria</h3>
+                            </div>
+                            <div class="descricao-prato">
+                                <p>350 gramas de torta</p>
+                                <p>frango e pão</p>
+                            </div>
+                            <div class="preco-prato">
+                                <span>R$ 14,00</span>
+                            </div>
                         </div>
                     </div>
                     <div class="icon"><ion-icon name="checkmark-circle"></ion-icon></div>
                 </button>
                 <button class="lasanha" onclick="selecionarPrato('lasanha'),verificaSelecao()">
                     <div class="conteudo-prato">
-                        <div><img src="images/lasanha.jpg" alt="torta fria"></div>
+                        <div class="imagem-prato"><img src="images/lasanha.jpg" alt="lasanha"></div>
                         <div class="texto-prato">
-                            <h3>torta fria</h3>
-                            <p>350 gramas de torta</p>
-                            <p>frango e pão</p>
-                        </div>
-                        <div class="preco-prato">
-                            <span>R$30,00</span>
+                            <div class="titulo-prato">
+                                <h3>Lasanha</h3>
+                            </div>
+                            <div class="descricao-prato">
+                                <p>Lasanha com queijo</p>
+                                <p>frango e massa</p>
+                            </div>
+                            <div class="preco-prato">
+                                <span>R$ 14,00</span>
+                            </div>
                         </div>
                     </div>
                     <div class="icon"><ion-icon name="checkmark-circle"></ion-icon></div>
@@ -50,14 +58,18 @@
                 </button>
                 <button class="ovo" onclick="selecionarPrato('ovo'),verificaSelecao()">
                     <div class="conteudo-prato">
-                        <div><img src="images/ovo.jpg" alt="torta fria"></div>
+                        <div class="imagem-prato"><img src="images/ovo.jpg" alt="ovo"></div>
                         <div class="texto-prato">
-                            <h3>torta fria</h3>
-                            <p>350 gramas de torta</p>
-                            <p>frango e pão</p>
-                        </div>
-                        <div class="preco-prato">
-                            <span>R$30,00</span>
+                            <div class="titulo-prato">
+                                <h3>ovo</h3>
+                            </div>
+                            <div class="descricao-prato">
+                                <p>3 Ovos</p>
+                                <p>Do jeito que preferir</p>
+                            </div>
+                            <div class="preco-prato">
+                                <span>R$ 6,00</span>
+                            </div>
                         </div>
                     </div>
                     <div class="icon"><ion-icon name="checkmark-circle"></ion-icon></div>
@@ -65,18 +77,21 @@
             </div>
         </section>
         <section>
-            <h2>Primeiro, seu prato</h2>
+            <h2>Agora, sua bebida</h2>
             <div class="bebidas">
                 <button class="coca-cola" onclick="selecionarBebida('coca-cola',verificaSelecao())">
                     <div class="conteudo-bebida">
-                        <div><img src="images/coca-cola.jpg" alt="coca cola"></div>
+                        <div class="imagem-prato"><img src="images/coca-cola.jpg" alt="coca cola"></div>
                         <div class="texto-prato">
-                            <h3>coca cola</h3>
-                            <p>350 ml de refrigerante</p>
-                            <p>frango e pão</p>
-                        </div>
-                        <div class="preco-prato">
-                            <span>R$30,00</span>
+                            <div class="titulo-prato">
+                                <h3>Coca-cola</h3>
+                            </div>
+                            <div class="descricao-prato">
+                                <p>Coca-cola latinha</p>
+                            </div>
+                            <div class="preco-prato">
+                                <span>R$3,00</span>
+                            </div>
                         </div>
                         <div class="icon"><ion-icon name="checkmark-circle"></ion-icon></div>
 
@@ -84,14 +99,17 @@
                 </button>
                 <button class="soda" onclick="selecionarBebida('soda'),verificaSelecao()">
                     <div class="conteudo-bebida">
-                        <div><img src="images/soda.jpg" alt="soda"></div>
+                        <div class="imagem-prato"><img src="images/soda.jpg" alt="soda"></div>
                         <div class="texto-prato">
-                            <h3>torta fria</h3>
-                            <p>350 gramas de torta</p>
-                            <p>frango e pão</p>
-                        </div>
-                        <div class="preco-prato">
-                            <span>R$30,00</span>
+                            <div class="titulo-prato">
+                                <h3>Soda</h3>
+                            </div>
+                            <div class="descricao-prato">
+                                <p>Soda latinha</p>
+                            </div>
+                            <div class="preco-prato">
+                                <span>R$3,00</span>
+                            </div>
                         </div>
                     </div>
                     <div class="icon"><ion-icon name="checkmark-circle"></ion-icon></div>
@@ -99,14 +117,17 @@
                 </button>
                 <button class="pepsi" onclick="selecionarBebida('pepsi'),verificaSelecao()">
                     <div class="conteudo-bebida">
-                        <div><img src="images/pepsi.jpg" alt="pepsi"></div>
+                        <div class="imagem-prato"><img src="images/pepsi.jpg" alt="pepsi"></div>
                         <div class="texto-prato">
-                            <h3>torta fria</h3>
-                            <p>350 gramas de torta</p>
-                            <p>frango e pão</p>
-                        </div>
-                        <div class="preco-prato">
-                            <span>R$30,00</span>
+                            <div class="titulo-prato">
+                                <h3>Pepsi</h3>
+                            </div>
+                            <div class="descricao-prato">
+                                <p>Pepsi latinha</p>
+                            </div>
+                            <div class="preco-prato">
+                                <span>R$3,00</span>
+                            </div>
                         </div>
                     </div>
                     <div class="icon"><ion-icon name="checkmark-circle"></ion-icon></div>
@@ -115,18 +136,22 @@
             </div>
         </section>
         <section>
-            <h2>Primeiro, seu prato</h2>
+            <h2>Por fim, sua sobremesa</h2>
             <div class="sobremesas">
                 <button class="torta-chocolate" onclick="selecionarSobremesa('torta-chocolate'),verificaSelecao()">
                     <div class="conteudo-sobremesa">
-                        <div><img src="images/torta-chocolate.jpg" alt="torta de chocolate"></div>
+                        <div class="imagem-prato"><img src="images/torta-chocolate.jpg" alt="torta de chocolate"></div>
                         <div class="texto-prato">
-                            <h3>coca cola</h3>
-                            <p>350 ml de refrigerante</p>
-                            <p>frango e pão</p>
-                        </div>
-                        <div class="preco-prato">
-                            <span>R$30,00</span>
+                            <div class="titulo-prato">
+                                <h3>Torta brigadeiro</h3>
+                            </div>
+                            <div class="descricao-prato">
+                                <p>350 gramas de torta</p>
+                                <p>Chocolate/Brigadeiro</p>
+                            </div>
+                            <div class="preco-prato">
+                                <span>R$ 8,00</span>
+                            </div>
                         </div>
                     </div>
                     <div class="icon"><ion-icon name="checkmark-circle"></ion-icon></div>
@@ -134,14 +159,17 @@
                 </button>
                 <button class="brigadeiro" onclick="selecionarSobremesa('brigadeiro'),verificaSelecao()">
                     <div class="conteudo-sobremesa">
-                        <div><img src="images/brigadeiro.jpg" alt="soda"></div>
+                        <div class="imagem-prato"><img src="images/brigadeiro.jpg" alt="soda"></div>
                         <div class="texto-prato">
-                            <h3>torta fria</h3>
-                            <p>350 gramas de torta</p>
-                            <p>frango e pão</p>
-                        </div>
-                        <div class="preco-prato">
-                            <span>R$30,00</span>
+                            <div class="titulo-prato">
+                                <h3>Brigadeiro</h3>
+                            </div>
+                            <div class="descricao-prato">
+                                <p>Brigadeiro enformado</p>
+                            </div>
+                            <div class="preco-prato">
+                                <span>R$1,00</span>
+                            </div>
                         </div>
                     </div>
                     <div class="icon"><ion-icon name="checkmark-circle"></ion-icon></div>
@@ -149,14 +177,17 @@
                 </button>
                 <button class="branquinho" onclick="selecionarSobremesa('branquinho'),verificaSelecao()">
                     <div class="conteudo-sobremesa">
-                        <div><img src="images/branquinho.jpg" alt="pepsi"></div>
+                        <div class="imagem-prato"><img src="images/branquinho.jpg" alt="pepsi"></div>
                         <div class="texto-prato">
-                            <h3>torta fria</h3>
-                            <p>350 gramas de torta</p>
-                            <p>frango e pão</p>
-                        </div>
-                        <div class="preco-prato">
-                            <span>R$30,00</span>
+                            <div class="titulo-prato">
+                                <h3>Beijinho</h3>
+                            </div>
+                            <div class="descricao-prato">
+                                <p>Beijinho enformado</p>
+                            </div>
+                            <div class="preco-prato">
+                                <span>R$1,00</span>
+                            </div>
                         </div>
                     </div>
                     <div class="icon"><ion-icon name="checkmark-circle"></ion-icon></div>
@@ -167,8 +198,8 @@
     </main>
     <footer>
         <button>
-            <p>Selecione os 3 itens
-                para fechar o pedido</p>
+            <p>Selecione os 3 itens</p>
+            <span>para fechar o pedido</span>
         </button>
     </footer>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>

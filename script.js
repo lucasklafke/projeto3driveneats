@@ -35,8 +35,10 @@ let sobremesa = null;
         
         if ((comida !== null) && (bebida !== null) && (sobremesa !== null)){
             let botaoFinalizar = document.querySelector("footer button")
-            let textoFinalizar = botaoFinalizar.querySelector("p")
-            textoFinalizar.textContent = "Fechar pedido"
+            let textoFinalizarp = botaoFinalizar.querySelector("p")
+            textoFinalizarp.textContent = "Fechar pedido"
+            let textoFinalizarspan = botaoFinalizar.querySelector("span")
+            textoFinalizarspan.style.display = "none"
             botaoFinalizar.style.backgroundColor = "#32B72F"
         }
     }
