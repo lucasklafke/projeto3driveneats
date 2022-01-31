@@ -2,16 +2,22 @@ let selecionado;
 let comida = null;
 let bebida = null;
 let sobremesa = null;
-
-    function selecionarPrato(seletor){
+let precoPrato = null;
+let precoBebida = null;
+let precoSobremesa = null;
+let total = 0;
+    
+function selecionarPrato(seletor){
         const addSelecionado = document.querySelector("."+seletor)
         const selecionado = document.querySelector(".pratos .selecionado")
         if (selecionado !== null) {
             selecionado.classList.remove("selecionado")
-        }
-        
+        }       
         addSelecionado.classList.add("selecionado")
-        return comida = "1";
+
+        const nomePrato = addSelecionado.querySelector("h3").textContent
+        const preco = addSelecionado.querySelector("span").textContent
+        return comida = nomePrato ,precoPrato = preco ;
     }
     function selecionarBebida(seletor){
         const selecionado = document.querySelector(".bebidas .selecionado")
@@ -20,7 +26,9 @@ let sobremesa = null;
         }
         const addSelecionado = document.querySelector("."+seletor)
         addSelecionado.classList.add("selecionado")
-        return bebida = '1';
+        const nomeBebida = addSelecionado.querySelector("h3").textContent
+        const preco = addSelecionado.querySelector("span").textContent
+        return bebida = nomeBebida ,precoBebida = preco ;
     }
     function selecionarSobremesa(seletor){
         const selecionado = document.querySelector(".sobremesas .selecionado")
@@ -29,18 +37,27 @@ let sobremesa = null;
         }
         const addSelecionado = document.querySelector("."+seletor)
         addSelecionado.classList.add("selecionado")
-        return sobremesa = '1';
+        const nomeSobremesa = addSelecionado.querySelector("h3").textContent
+        const preco = addSelecionado.querySelector("span").textContent
+        return sobremesa = nomeSobremesa ,precoSobremesa = preco ;
     }
     function verificaSelecao(){
         
         if ((comida !== null) && (bebida !== null) && (sobremesa !== null)){
             let botaoFinalizar = document.querySelector("footer button")
-            let textoFinalizarp = botaoFinalizar.querySelector("p")
-            textoFinalizarp.textContent = "Fechar pedido"
+            botaoFinalizar.style.backgroundColor = "#32B72F"   
+
+            let textoFinalizarp = botaoFinalizar.querySelector(".finalizado")
+            textoFinalizarp.innerHTML = "Fechar pedido"
             let textoFinalizarspan = botaoFinalizar.querySelector("span")
             textoFinalizarspan.style.display = "none"
-            botaoFinalizar.style.backgroundColor = "#32B72F"
         }
+    
+    }
+    function finalizado(){
+        total = (precoPrato + precoBebida + precoSobremesa)
+        let mensagem = `Olá, gostaria de fazer o pedido:\n- Prato: ${comida} ${precoPrato}\n- Bebida: ${bebida}${precoBebida}\n- Sobremesa: ${sobremesa} ${precoSobremesa}`  
+        window.open(`https://wa.me/5551985951423?text=${encodeURIComponent(mensagem)}`)
     }
     verificaSelecao()
 

@@ -100,7 +100,7 @@ button{
 }
 .preco-prato{
     position: absolute;
-    bottom: 13px;
+    bottom: 20px;
 }
 .texto-prato h3{
     font-family: 'Roboto', sans-serif;
@@ -111,23 +111,17 @@ button{
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     font-size: 15px;
-    margin-top: 4px;
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
-}
-
-.texto-prato span{
-    font-family: 'Roboto', sans-serif;
-    font-weight: 300;
-    font-size: 15px;
-    margin-top: 4px;
-    margin-bottom: 4px;
     display: flex;
     align-items: flex-start;
     flex-direction: column;
 }
 .preco-prato span{
+display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.preco-prato span,.price{
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-size: 16px;
@@ -215,4 +209,5 @@ footer span{
 
     color: #FFFFFF;
     align-items: center;
+    width: 230px;
 }
