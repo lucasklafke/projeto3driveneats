@@ -37,6 +37,8 @@ function selecionarPrato(seletor){
         }
         const addSelecionado = document.querySelector("."+seletor)
         addSelecionado.classList.add("selecionado")
+        
+        
         const nomeSobremesa = addSelecionado.querySelector("h3").textContent
         const preco = addSelecionado.querySelector("span").textContent
         return sobremesa = nomeSobremesa ,precoSobremesa = preco ;
@@ -55,8 +57,18 @@ function selecionarPrato(seletor){
     
     }
     function finalizado(){
-        total = (precoPrato + precoBebida + precoSobremesa)
-        let mensagem = `Olá, gostaria de fazer o pedido:\n- Prato: ${comida} ${precoPrato}\n- Bebida: ${bebida}${precoBebida}\n- Sobremesa: ${sobremesa} ${precoSobremesa}`  
+        
+        const arrPrato = precoPrato.replace(",",".").split("R$")
+        const valorPrato = Number(arrPrato[1])
+     
+        const arrBebida = precoBebida.replace(",",".").split("R$")
+        const valorBebida = Number(arrBebida[1])
+
+        const arrSobremesa = precoSobremesa.replace(",",".").split("R$")
+        const valorSobremesa = Number(arrSobremesa[1])
+        
+        total = (valorPrato + valorBebida + valorSobremesa)
+        let mensagem = `Olá, gostaria de fazer o pedido:\n- Prato: ${comida}\n- Bebida: ${bebida}\n- Sobremesa: ${sobremesa}\nTotal: R$ ${total.toFixed(2)}`  
         window.open(`https://wa.me/5551985951423?text=${encodeURIComponent(mensagem)}`)
     }
     verificaSelecao()
